@@ -1,0 +1,508 @@
+<html lang="en">
+
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Material Design Lite</title>
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+ 
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#3372DF">
+<style>
+  <!-- Page styles -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.css">
+  <link rel="stylesheet" href="https://www.getmdl.io/templates/android-dot-com/styles.css">
+
+  <!-- flyout menu  -->
+
+  <link rel="stylesheet" href="http://responsivemultimenu.com/lib/responsive-multi-menu/css/responsivemultimenu.css" type="text/css" />
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+  /** Edit Form **/
+.mdl-card {
+  margin-top: 8px;
+ /** margin-left: auto;**/
+  margin-bottom: 40px;
+  /**margin-right: auto;**/
+}
+  /** List Form **/
+.list-card-wide.mdl-card {
+  width: 90%;
+  }
+ .mdl-js-data-table.mdl-data-table {
+ border:none; 
+}
+</style>
+</head>
+
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+    <!-- top line -->
+    <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+      <div class="mdl-layout__header-row">
+        <!-- logo-->
+        <span class="android-title mdl-layout-title">
+        
+          <a href="#"> 
+          <i class="material-icons">home</i>
+            <img src="https://coga.cn.com/downloads/logo.png" alt="home"></a>
+        </span>
+        <!-- Add spacer, to right top navigation section -->
+        <div class="android-header-spacer mdl-layout-spacer"></div>
+
+        <!-- Top Navigation -->
+        <div class="android-navigation-container">
+          <nav class="android-navigation mdl-navigation">
+            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Sign Off</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- flyout menu -->
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title"> Application Menu
+			<img class="logo-image" src="https://na.an.com/downloads/logo.png" alt="logo">
+		</span>
+      <nav class="mdl-navigation">
+        <!--<ul class="matera_menu matera_blue"> -->
+        <div class="rmm style"  style="display: block;">
+          <ul>
+            <li>
+              <a href="#">Books</a>
+              <ul>
+                <li>
+                  <a href="#">Audiobooks</a>
+                </li>
+                <li>
+                  <a href="#">Cookbooks</a>
+                </li>
+                <li>
+                  <a href="#">Catalogs</a>
+                </li>
+                <li>
+                  <a href="#">Other</a>
+                  <ul>
+                    <li><a href="#">Other 1</a></li>
+                    <li><a href="#">Other 2</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Dvds</a>
+            </li>
+            <li>
+              <a href="#">Music</a>
+              <ul>
+                <li><a href="#">Cassettes</a></li>
+                <li><a href="#">CD</a></li>
+                <li><a href="#">Records</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Video games</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- main section -->
+    <div class="mdl-layout__content">
+
+      <!-- Cogran Form Template  -->
+      <!-- Simple header with scrollable tabs. -->
+      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+
+        <header class="mdl-layout__header  mdl-color--primary-dark">
+
+          <div class="mdl-layout__header-row  ">
+            <!-- Title -->
+            <span class="mdl-layout-title ">Household <br/> <i style="font-size:small;"> contacts, registrations, paments, profile, medical</i></span>
+            <!-- right form menu -->
+            <!-- Right aligned form menu -->
+
+            <div class="mdl-layout-spacer"></div>
+            <!-- right form menu -->
+
+            <button id="app-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
+              <i class="material-icons">more_vert</i>
+            </button>
+            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="app-menu-lower-left">
+              <li class="mdl-menu__item"><span class="icon material-icons">help</span>Help</li>
+              <li class="mdl-menu__item"><span class="icon material-icons">print</span>Print</li>
+              <li disabled class="mdl-menu__item">
+                <h4>Settings</h4></li>
+              <li class="mdl-menu__item">
+                <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+                  <input type="checkbox" id="switch-1" class="mdl-switch__input" checked />
+                  <span class="mdl-switch__label">Form text edit</span>
+                </label>
+              </li>
+              <li class="mdl-menu__item">Show/hide form fields</li>
+              <li class="mdl-menu__item">Manage drop down values</li>
+            </ul>
+            <!-- end right form menu -->
+
+          </div>
+          <!-- Tabs -->
+          <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-layout__header--waterfall">
+            <a href="#scroll-tab-1" class="mdl-layout__tab is-active"><i class="material-icons">filter_list</i>Filter</a>
+            <a href="#scroll-tab-2" class="mdl-layout__tab ">Players</a>
+            <a href="#scroll-tab-3" class="mdl-layout__tab">Profile</a>
+            <a href="#scroll-tab-4" class="mdl-layout__tab">Dual Grid</a>
+
+          </div>
+
+        </header>
+        <!-- Search drawer -->
+
+
+        <!-- end right form menu -->
+
+        <!-- tab sections -->
+        <main class="mdl-layout__content">
+          <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
+            <div class="page-content">
+              <!-- Form 1 -->
+              <div class="mdl-grid mdl-grid--no-spacing">
+                <div class="mdl-cell mdl-cell--3-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-color--grey-100">
+                  <div class="p-40 p-r-20 p-20--small">
+                    <div class=" mdl-color-text--blue-grey-400">
+                      <h5><i class=" material-icons f-left m-r-5">dvr</i> Search</h5>
+                      <p>Select a user to edit or select multiple users to do export functions or mass asignment to them</p>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mdl-card mdl-card-order mdl-shadow--8dp">
+                  <div class="mdl-card__title">
+                    <span class="mdl-layout-title">Filter list by</span>
+
+
+                  </div>
+
+                  <div class="mdl-card__supporting-text mdl-grid">
+                    <form action="#">
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="form1-1" />
+                        <label class="mdl-textfield__label" for="form1-1">First Name...</label>
+                      </div>
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="form1-2" />
+                        <label class="mdl-textfield__label" for="form1-2">Last Name...</label>
+                      </div>
+
+                      <div class="mdl-cell mdl-cell--12-col">
+
+                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="form1-checkbox-1">
+                          <input type="checkbox" id="form1-checkbox-1" class="mdl-checkbox__input" />
+                          <span class="mdl-checkbox__label">Checkbox</span>
+                        </label>
+                      </div>
+                      <!-- form footer -->
+                      <div class="mdl-card__actions mdl-cell--12-col send-button">
+                        <button class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--raised mdl-button--colored" id="save1">
+                          Search
+                        </button>
+
+                        <button type="reset" class="mdl-button mdl-js-button mdl-js-ripple-effect" data-upgraded=",MaterialButton,MaterialRipple">
+                          Reset
+                          <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+
+              </div>
+
+              <!-- end of form 1 -->
+            </div>
+
+          </section>
+          <section class="mdl-layout__tab-panel" id="scroll-tab-2">
+            <div class="page-content">
+              <!-- Form 2 -->
+              <div class="mdl-grid mdl-grid--no-spacing">
+
+                <div class="mdl-cell mdl-cell--3-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-color--grey-100">
+                  <div class="p-40 p-r-20 p-20--small">
+                    <div class=" mdl-color-text--blue-grey-400">
+                      <h3><i class=" material-icons f-left m-r-5">dvr</i> List Help</h3>
+                      <p>Select a user to edit or select multiple users to do export functions or mass asignment to them</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="mdl-cell mdl-cell--9-col">
+
+                  <div class=" mdl-card list-card-wide mdl-card-order mdl-shadow--8dp">
+                    <!-- grid left pane -->
+
+                    <!-- end grid left pane -->
+
+                    <div class="mdl-card__title">
+                      <span class="mdl-layout-title">List of players</span>
+
+                      <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored">
+                        <i class="material-icons">add</i>
+                      </button>
+                    </div>
+
+                    <div class="mdl-card__supporting-text mdl-grid">
+                      <table class="mdl-data-table mdl-js-data-table ">
+                        <thead>
+                          <tr>
+                            <th>Select</th>
+                            <th class="mdl-data-table__cell--non-numeric">Last Name</th>
+                            <th>Quantity</th>
+                            <th>Unit price</th>
+                            <th>Next</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <button id="form2-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
+                                <i class="material-icons">edit</i>
+                              </button>
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">Smith</td>
+                            <td>25</td>
+                            <td>$2.90</td>
+                            <td>
+                              <!-- Right aligned menu below button -->
+                              <button id="form3-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
+                                <i class="material-icons">more_vert</i>
+                              </button>
+
+                              <ul class="mdl-menu mdl-menu--lower-right mdl-js-menu mdl-js-ripple-effect" for="form3-menu-lower-left">
+                                <li class="mdl-menu__item">Registrations</li>
+                                <li class="mdl-menu__item">Payments</li>
+                                <li class="mdl-menu__item">Profile</li>
+                                <li class="mdl-menu__item">Evaluations</li>
+                              </ul>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <button id="form3-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
+                                <i class="material-icons">edit</i>
+                              </button>
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">Wills</td>
+                            <td>25</td>
+                            <td>$2.90</td>
+                            <td>
+                              <!-- Right aligned menu below button -->
+                              <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+                                <i class="material-icons">more_vert</i>
+                              </button>
+
+                              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
+                                <li class="mdl-menu__item">Some Action</li>
+                                <li class="mdl-menu__item">Another Action</li>
+                                <li disabled class="mdl-menu__item">Disabled Action</li>
+                                <li class="mdl-menu__item">Yet Another Action</li>
+                              </ul>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <button id="menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
+                                <i class="material-icons">edit</i>
+                              </button>
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">Jones</td>
+                            <td>25</td>
+                            <td>$2.90</td>
+                            <td>
+                              <!-- Right aligned menu below button -->
+                              <button id="menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+                                <i class="material-icons">more_vert</i>
+                              </button>
+
+                              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
+                                <li class="mdl-menu__item">Some Action</li>
+                                <li class="mdl-menu__item">Another Action</li>
+                                <li disabled class="mdl-menu__item">Disabled Action</li>
+                                <li class="mdl-menu__item">Yet Another Action</li>
+                              </ul>
+                            </td>
+                          </tr>
+
+
+                        </tbody>
+                      </table>
+
+                      <!-- form footer -->
+                      <div class="mdl-card__actions mdl-cell--12-col send-button">
+                        <button class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--raised mdl-button--colored" id="send">
+                          Previous
+                        </button>
+                        <button class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--raised mdl-button--colored" id="send">
+                          Next
+                        </button>
+
+                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored">
+                          <i class="material-icons">add</i>
+                        </button>
+
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- end of Form 2 -->
+            </div>
+          </section>
+-
+          <!-- Left / Right List -->
+          <section class="mdl-layout__tab-panel" id="scroll-tab-4">
+            <div class="page-content">
+              <div class="mdl-grid mdl-grid--no-spacing">
+
+
+                <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+                  <!-- Left List  -->
+                  <header class="mdl-layout__header">
+                    <div class="mdl-layout__header-row">
+                      <span class="mdl-layout-title"><h5>Contact ABC</h5></span>
+                    </div>
+                  </header>
+                  <div class="mdl-layout__drawer">
+                    <span class="mdl-layout-title">Select to assign</span>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+                      <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked />
+                      <span class="mdl-radio__label">First</span>
+                    </label>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+                      <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2" />
+                      <span class="mdl-radio__label">Second</span>
+                    </label>
+                  </div>
+                  <!-- end Left List  -->
+                  <!-- Right list -->
+                  <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell-col">
+                      <main class="mdl-layout__content">
+                        <form action="#">
+                          <table class="mdl-data-table mdl-js-data-table ">
+                            <thead>
+                              <tr>
+                                <th>Select</th>
+                                <th class="mdl-data-table__cell--non-numeric">Heading 1</th>
+                                <th>Heading 2</th>
+                                <th>Go direct to..</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+                                    <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" />
+                                  </label>
+                                </td>
+                                <td class="mdl-data-table__cell--non-numeric">col 1</td>
+                                <td>col 2</td>
+                                <td>
+                                  <!-- Right aligned menu below button -->
+                                  <button id="demo2-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+                                    <i class="material-icons">more_vert</i>
+                                  </button>
+                                  <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo2-menu-lower-right">
+                                    <li class="mdl-menu__item">Menu 1</li>
+                                  </ul>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+                                    <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" />
+                                  </label>
+                                </td>
+                                <td class="mdl-data-table__cell--non-numeric">col 1</td>
+                                <td>col 2</td>
+                                <td>
+                                  <!-- Right aligned menu below button -->
+                                  <button id="demo4-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+                                    <i class="material-icons">more_vert</i>
+                                  </button>
+                                  <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo4-menu-lower-right">
+                                    <li class="mdl-menu__item">Menu 1</li>
+                                  </ul>
+                                </td>
+                              </tr>
+
+                            </tbody>
+                          </table>
+
+                          <!-- slider demo -->
+                          <p style="width:300px">Passing ability
+                            <input class="mdl-slider mdl-js-slider" type="range" id="s1" min="0" max="10" value="2" step="2" />
+                          </p>
+
+                          <!-- form footer 2 -->
+                          <footer>
+                            <div class="mdl-mini-footer__left-section">
+                              <button class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--raised mdl-button--colored" id="Previous2">Save
+                              </button>
+                            </div>
+                          </footer>
+                        </form>
+                      </main>
+                    </div>
+                  </div>
+                  <!-- end Right list -->
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- end Left / Right List -->
+
+        </main>
+      </div>
+      <!-- tab section end -->
+
+
+    </div>
+    <!-- main section -->
+  </div>
+  <!-- last div -->
+
+  <!-- Google MDL -->
+  <script src="https://www.getmdl.io/material.min.js"></script>
+  <!-- jquery  -->
+
+<script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+<!-- main menu http://responsivemultimenu.com/ -->
+<script type="text/javascript" src="http://responsivemultimenu.com/lib/responsive-multi-menu/js/responsivemultimenu.js"></script>
+</body>
+</html>

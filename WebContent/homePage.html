@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+ body {
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-style: normal;
+	background-color: #2C3E50;
+}
+#container {
+	width: 100%;
+	margin: 0;
+	background-color: #fff;
+	position: relative;
+}
+
+#masthead {
+	
+	width: 100%;
+	background-color: #2C3E50;
+	
+}
+#masthead h3 {
+	float: left;
+	margin: 0;
+	padding: 0;
+	
+}
+#masthead h4 {
+	font-size: small;
+	text-align: right;
+	color: #000;
+	margin: 10px 10px 10px 0;
+	padding: 0;
+}
+
+
+
+
+#navigation {
+	background-color: white;
+	overflow: visible;
+	padding-bottom: 90px;
+}
+
+#footer {
+	background-color: #dfcfbf;
+	padding-bottom: 50px;
+	
+}
+/* Styles for Masthead */
+#masthead img {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* Styles for Content */
+h1 {
+	font-size: 2em;
+	color: #393939;
+}
+h2 {
+	font-size: 1.75em;
+	color: #469;
+}
+h3 {
+	font-size: 1.5em;
+	color: #469;
+}
+h4 {
+	font-size: 1.25em;
+	color: #469;
+}
+h5 {
+	font-size: 0.75em;
+	color: #469;
+}
+h6 {
+	font-size: 0.5em;
+	color: #469;
+}
+/* Styles for Footer */
+#footer p {
+	font-size: x-small;
+	text-align: center;
+	color: #393939;
+	margin: 10px;
+	padding: 1px;
+}
+#footer a {
+	color: #393939;
+	text-decoration: underline;
+}
+#footer a:hover {
+	color: #000;
+	text-decoration: none;
+}
+/* Styles for Links */
+a {
+	color: #469;
+	text-decoration: underline;
+}
+a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+.style_bold {
+	font-weight: bold;
+}
+.style_italic {
+	font-style: italic;
+}
+#page_content {
+	position: static;
+	width: 100%;
+	height:150%;
+	background-position:center;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCAA77;
+	border-bottom-width: 900px;
+	
+}
+#horizontalmenuNext 
+{
+  font-weight: bold; 
+  font-size: 12px; 
+  font-family: "Tahoma, Verdana, Arial, Sans-Serif";
+  background-color: "#34495E";
+}
+#horizontalmenu ul
+   {
+	padding:1;
+	margin:1; 
+	list-style:none;
+} 
+
+#horizontalmenu li
+{ 
+	float:left; 
+	position:relative;
+	padding-right:0; 
+	display:block; 
+	border:2px solid #A3E4D7; 
+	border-style:inset;
+	/* word-wrap: break-word;  */
+
+ }
+
+#horizontalmenu li ul {
+display:none;
+	position:absolute;
+}
+
+#horizontalmenu li:hover ul
+{ 
+	display:block; /* background:#A3E4D7; */ 
+	height:auto; width:;
+ } 
+#horizontalmenu li ul li
+ { 
+	clear:both; border-style:none;
+ }
+
+</style>
+</head>
+<body >
+<!-- Begin Container -->
+<div id="container">
+	<!-- Begin Masthead -->
+	<div id="masthead">
+		<h3 style="color: white;">
+MAJUMDAR Corp. <br />
+POS Mgmt. Application (GST Compliant)
+</h3><h4 style="color: white;" >
+		office (000) 000-0000<br />
+		fax (000) 000-0000<br />
+		toll-free (000) 000-0000</h4>
+
+	</div>
+	<!-- End Masthead -->
+	<!-- Begin Navigation -->
+	<div id="navigation">
+	
+		<div  id="horizontalmenu">
+	<ul style="color: white">
+	
+		<li >
+			<a href="#Business Profile Details"><input type="submit" value="Business Profile" style='font-variant: normal; color: white; font-weight: bold;font-size: 12px; font-family: Georgia; line-height: normal; font-style: oblique; background-color: #0B5345; height: 30px'> </a>
+			<ul>
+					<li><a href="#"><input type="submit" value="Edit Details" name="services"style="width: 221px;
+    color: teal; background-color: Azure; font-weight: normal; font-size: 10px; font-family: Arial; 
+    font-style: oblique;line-height: normal; position: relative; height: ;top: auto" ></a></li>
+				
+			</ul>
+
+
+			</li>
+	<li style=" border-right-style: inset; border-bottom-color: AliceBlue; border-left-style: inset; border-left-color: AliceBlue; border-top-color: AliceBlue; border-bottom-style: inset; border-right-color: AliceBlue; border-top-style: inset">
+			<a href="#Banking"><input type="button" value="Banking" style='font-variant: normal; color: white; font-weight: bold;font-size: 12px; font-family: Georgia; line-height: normal; font-style: oblique; background-color: #0B5345; height: 30px' ></a>
+			<ul>
+					<li><a href="#"><input  type="submit"  value="Add a PAN Card" name="services"  style="width: 221px;
+    color: teal; background-color: Azure; font-weight: normal; font-size: 10px; font-family: Arial; 
+    font-style: oblique;line-height: normal; position: relative; height: ;top: auto"></a></li>
+				<li><a href="#"><input type="submit" value="Add Netbanking Bank Account
+   /Debit/Credit Card Account" name="services"  style="width: 221px;
+    color: teal; background-color: Azure; font-weight: normal;; font-size: 10px; font-family: Arial; 
+    font-style: oblique;line-height: normal; position: relative; height: ;top: auto"></a></li>
+					<li><a href="#"><input type="submit" value="Card/Bank Account List" name="services"  style="width: 221px;
+    color: teal; background-color: Azure; font-weight: normal; font-size: 10px; font-family: Arial; 
+    font-style: oblique; line-height: normal; position: relative; height: ;top: auto"></a></li>
+				
+			</ul>
+			</li>
+		<li style=" border-right-style: inset; border-bottom-color: AliceBlue; border-left-style: inset; border-left-color: AliceBlue; border-top-color: AliceBlue; border-bottom-style: inset; border-right-color: AliceBlue; border-top-style: inset">
+			<a href="#Cheque-Book Mgmt."><input type="button" value="Cheque-Book Mgmt." style='font-variant: normal; color: white; font-weight: bold;font-size: 12px; font-family: Georgia; line-height: normal; font-style: oblique; background-color: #0B5345; height: 30px' ></a>
+				<ul>
+					<li><a href="#"><input type="submit" id="cbm" value="Add Cheque Number to 
+   a Bank Account
+   "name="services"  style="width: 221px;
+    color: teal; background-color: Azure; font-weight: normal; font-size: 10px; font-family: Arial; 
+    font-style: oblique; line-height: normal; position: relative; height: ;top: auto"></a></li>
+				<li><a href="#"><input type="submit" value="Cheque Number List" name="services"  style="width: 221px;
+    color: teal; background-color: Azure; font-weight: normal; font-size: 10px; font-family: Arial; 
+    font-style: oblique; line-height: normal; position: relative; height: ;top: auto"></a></li>
+					
+			</ul>
+			</li>
+		<li style=" border-right-style: inset; border-bottom-color: AliceBlue; border-left-style: inset; border-left-color: AliceBlue; border-top-color: AliceBlue; border-bottom-style: inset; border-right-color: AliceBlue; border-top-style: inset">
+			<a href="#Add Vendors "><input type="button" value="Add Vendors" style='font-variant: normal; color: white; font-weight: bold;font-size: 12px; font-family: Georgia; line-height: normal; font-style: oblique; background-color: #0B5345; height: 30px' > </a>
+				<ul>
+					<li><a href="http://localhost:8080/ApplicationAn/VendorDetailsAddUpdate.html"><input type="submit" value="Add a Vendor" name="services"  style="width: 221px;
+    color: teal; background-color: Azure; font-weight: normal; font-size: 10px; font-family: Arial; 
+    font-style: oblique; line-height: normal; position: relative; height: ;top: auto"></a></li>
+				<li><a href="#"><input type="submit" value="Vendor List" name="services"  style="width: 221px;
+    color: teal; background-color: Azure; font-weight: normal; font-size: 10px; font-family: Arial; 
+    font-style: oblique; line-height: normal; position: relative; height: ;top: auto"></a></li>
+				<li><a href="#"> <input type="submit" value="Show Invoices" name="services"  style="width: 221px;
+    color: teal; background-color: Azure; font-weight: normal; font-size: 10px; font-family: Arial; 
+    font-style: oblique; line-height: normal; position: relative; height: ;top: auto">  </a></li>
+					
+			</ul>
+			</li>
+		<li style=" border-right-style: inset; border-bottom-color: AliceBlue; border-left-style: inset; border-left-color: AliceBlue; border-top-color: AliceBlue; border-bottom-style: inset; border-right-color: AliceBlue; border-top-style: inset">
+		<a href="#Receivables"><input type="button" value="Receivables &&#13;&#10; Payables Mgmt." style='font-variant: normal; color: white; font-weight: bold;font-size: 12px; font-family: Georgia; line-height: normal; font-style: oblique; background-color: #0B5345; height: 30px' ></a>
+		<ul>
+					<li><a href="#"> <input type="submit" value="Add a Transaction" name="services"  style="width: 221px;
+    color: teal; background-color: Azure; font-weight: normal; font-size: 10px; font-family: Arial; 
+    font-style: oblique; line-height: normal; position: relative; height: ;top: auto"></a></li>
+				<li><a href="#"> <input type="button" value="Income List" name="services"  style="width: 221px;
+    color: teal; background-color: Azure; font-weight: normal; font-size: 10px; font-family: Arial; 
+    font-style: oblique; line-height: normal; position: relative; height: ;top: auto"></a></li>
+				<li><a href="#"><input type="button" value="Expenditure List" name="services"  style="width: 221px;
+    color: teal; background-color: Azure; font-weight: normal; font-size: 10px; font-family: Arial; 
+    font-style: oblique; line-height: normal; position: relative; height: ;top: auto"></a></li>
+					
+			</ul>
+		</li>
+		<li style=" border-right-style: inset; border-bottom-color: AliceBlue; border-left-style: inset; border-left-color: AliceBlue; border-top-color: AliceBlue; border-bottom-style: inset; border-right-color: AliceBlue; border-top-style: inset">
+			<a href="#GST"><input type="button" value="Invoice Mgmt." style='font-variant: normal; color: white; font-weight: bold;font-size: 12px; font-family: Georgia; line-height: normal; font-style: oblique; background-color: #0B5345; height: 30px' >
+     </a>
+			<ul>
+					<li><a href="#"><input type="submit" value="Generate Invoicen" name="services"  style="width: 221px;
+    color: teal; background-color: Azure; font-weight: normal; font-size: 10px; font-family: Arial; 
+    font-style: oblique; line-height: normal; position: relative; height: ;top: auto"></a></li>
+				<li><a href="#"><input type="button" value="All Invoices" name="services"  style="width: 221px;
+    color: teal; background-color: Azure; font-weight: normal; font-size: 10px; font-family: Arial; 
+    font-style: oblique; line-height: normal; position: relative; height: ;top: auto"></a></li>
+				<li><a href="#"><input type="button" value="Invoice Scheduler" name="services"  style="width: 221px;
+    color: teal; background-color: Azure; font-weight: normal; font-size: 10px; font-family: Arial; 
+    font-style: oblique; line-height: normal; position: relative; height: ;top: auto">   </a></li>
+					
+			</ul>
+			</li>
+			
+		<li style=" border-right-style: inset; border-bottom-color: AliceBlue; border-left-style: inset; border-left-color: AliceBlue; border-top-color: AliceBlue; border-bottom-style: inset; border-right-color: AliceBlue; border-top-style: inset">
+			<a href="#Fund Flow & Cash Flow "><input type="button" value="Fund & Cash Flow" style='font-variant: normal; color: white; font-weight: bold;font-size: 12px; font-family: Georgia; line-height: normal; font-style: oblique; background-color: #0B5345; height: 30px'> </a>
+			<ul>
+					<li><a href="#"><input type="submit" value="Current Year" name="services"  style="width: 221px;
+    color: teal; background-color: Azure; font-weight: normal; font-size: 10px; font-family: Arial; 
+    font-style: oblique; line-height: normal; position: relative; height: ;top: auto"></a></li>
+				<li><a href="#"><input type="button" value="Historical Data" name="services"  style="width: 221px;
+    color: teal; background-color: Azure; font-weight: normal; font-size: 10px; font-family: Arial; 
+    font-style: oblique; line-height: normal; position: relative; height: ;top: auto"> </a></li>
+								
+			</ul>
+			</li>
+		<li style=" border-right-style: inset; border-bottom-color: AliceBlue; border-left-style: inset; border-left-color: AliceBlue; border-top-color: AliceBlue; border-bottom-style: inset; border-right-color: AliceBlue; border-top-style: inset">
+			<a href="#Accountants"><input type="button" value="Accountants" style='font-variant: normal; color: white; font-weight: bold;font-size: 12px; font-family: Georgia; line-height: normal; font-style: oblique; background-color: #0B5345; height: 30px'> </a>
+			<ul>
+					<li><a href="#"><input type="submit" value="Add and accountant" name="services"  style="width: 221px;
+    color: teal; background-color: Azure; font-weight: normal; font-size: 10px; font-family: Arial; 
+    font-style: oblique; line-height: normal; position: relative; height: ;top: auto"></a></li>
+				<li><a href="#"><input type="button" value="List all accoutnants" name="services"  style="width: 221px;
+    color: teal; background-color: Azure; font-weight: normal; font-size: 10px; font-family: Arial; 
+    font-style: oblique; line-height: normal; position: relative; height: ;top: auto"></a></li>
+									
+			</ul>
+			</li>
+		<li style=" border-right-style: inset; border-bottom-color: AliceBlue; border-left-style: inset; border-left-color: AliceBlue; border-top-color: AliceBlue; border-bottom-style: inset; border-right-color: AliceBlue; border-top-style: inset">
+			<a href="#Financial Stmt. Generator"><input type="button" value="Financial &#13;&#10;Stmt. Generator" style='font-variant: normal; color: white; font-weight: bold;font-size: 12px; font-family: Georgia; line-height: normal; font-style: oblique; background-color: #0B5345; height: 30px' ></a>
+			<ul>
+					<li><a href="#"><input type="submit" value="Income Stmt." name="services"  style="width: 221px;
+    color: teal; background-color: Azure; font-weight: normal; font-size: 10px; font-family: Arial; 
+    font-style: oblique; line-height: normal; position: relative; height: ;top: auto"></a></li>
+				<li><a href="#">  <input type="button" value="Balance Sheet" name="services"  style="width: 221px;
+    color: teal; background-color: Azure; font-weight: normal; font-size: 10px; font-family: Arial; 
+    font-style: oblique; line-height: normal; position: relative; height: ;top: auto"></a></li>
+				<li><a href="#"><input type="button" value="Stmt. of Cash Flows" name="services"  style="width: 221px;
+    color: teal; background-color: Azure; font-weight: normal; font-size: 10px; font-family: Arial; 
+    font-style: oblique; line-height: normal; position: relative; height: ;top: auto"></a></li>
+					
+			</ul>
+			</li>
+			
+		<li style=" border-right-style: inset; border-bottom-color: AliceBlue; border-left-style: inset; border-left-color: AliceBlue; border-top-color: AliceBlue; border-bottom-style: inset; border-right-color: AliceBlue; border-top-style: inset">
+			<a href="#GST Tax Engine"><input type="button" value="GST Tax Engine" style='font-variant: normal; color: white; font-weight: bold;font-size: 12px; font-family: Georgia; line-height: normal; font-style: oblique; background-color: #0B5345; height: 30px'></a>
+			<ul>
+					<li><a href="http://gspindia.in/partner.html"> <input type="submit" value="GSTR e-filing" name="services"  style="width: 221px;
+    color: teal; background-color: Azure; font-weight: normal; font-size: 10px; font-family: Arial; 
+    font-style: oblique; line-height: normal; position: relative; height: ;top: auto"></a></li>
+				<li><a href="#"><input type="button" value="Generate Reconciliation" name="services"  style="width: 221px;
+    color: teal; background-color: Azure; font-weight: normal; font-size: 10px; font-family: Arial; 
+    font-style: oblique; line-height: normal; position: relative; height: ;top: auto"></a></li>
+				<li><a href="#"><input type="button" value="GSTR filing history" name="services"  style="width: 221px;
+    color: teal; background-color: Azure; font-weight: normal; font-size: 10px; font-family: Arial; 
+    font-style: oblique; line-height: normal; position: relative; height: ;top: auto">   </a></li>
+					
+			</ul>
+			</li>		
+					
+</ul>
+</div>
+	</div>
+	<!-- Begin Page Content -->
+	<div id="page_content" style="background-color: #F0F3F4;">
+	
+
+<div  id="horizontalmenuNext">
+
+<p align="center">
+   <br>
+  <a href="http://localhost:8080/MajumdarPOS/Sales.html"> <input type="submit" value="NEW SALE" name="services" onclick="" style="width: 221px;
+    height: 124px; background-image: url('Images/liquid.jpeg'); font-weight: bold; font-size: large" tabindex="1" src="jgj">
+   </a>
+    <input type="submit" value="SALES HISTORY" name="services" onclick="" style="width: 221px;
+    height: 124px; background-image: url('Images/liquid.jpeg'); font-weight: bold; font-size: large" tabindex="1" src="jgj">
+    <input type="submit" value="PROMOTIONS" name="services" onclick="" style="width: 221px;
+    height: 124px; background-image: url('Images/liquid.jpeg'); font-weight: bold; font-size: large" tabindex="1" src="jgj">
+    
+    <br>
+    
+   
+</p>
+
+<p align="center">
+   <br>
+   <input type="submit" value="CUSTOMERS"name="services" onclick="" style="width: 221px;
+    height: 124px; background-image: url('Images/liquid.jpeg'); font-weight: bold; font-size: large" tabindex="1" src="jgj">
+    <input type="submit" value="INVENTORY"name="services" onclick="" style="width: 221px;
+    height: 124px; background-image: url('Images/liquid.jpeg'); font-weight: bold; font-size: large" tabindex="1" src="jgj">
+    <input type="submit" value="TRANSFERS" name="services" onclick="" style="width: 221px;
+    height: 124px; background-image: url('Images/liquid.jpeg'); font-weight: bold; font-size: large" tabindex="1" src="jgj">
+    
+    <br>
+    
+   
+</p>
+
+<p align="center">
+   <br>
+   <input type="submit" value="VENDOR"name="services" onclick="" style="width: 221px;
+    height: 124px; background-image: url('Images/liquid.jpeg'); font-weight: bold; font-size: large"1" src="jgj">
+    <input type="submit" value="PAY BILLS" name="services" onclick="" style="width: 221px;
+    height: 124px; background-image: url('Images/liquid.jpeg'); font-weight: bold; font-size: large" tabindex="1" src="jgj">
+    <input type="submit" value="REPORTS " name="services" onclick="" style="width: 221px;
+    height: 124px; background-image: url('Images/liquid.jpeg'); font-weight: bold; font-size: large" tabindex="1" src="jgj">
+    
+    <br>
+    
+   
+</p>
+</div>
+
+
+
+</div>
+		
+		<!--End Right Column-->
+
+	<!-- Begin Footer -->
+	<div id="footer">
+		<p><a href="index.html">Home</a> | <a href="about/default.html">About</a> 
+		| <a href="calendar/default.html">Calendar</a> |
+		<a href="contact/default.html">Contact</a> |
+		<a href="employees/default.html">Employees</a> |
+		<a href="employment/default.html">Employment</a> |
+		<a href="faq/default.html">FAQ</a> |
+		<a href="information_links/default.html">Information Links</a> |
+		<a href="news/default.html">News</a> |
+		<a href="photo_gallery/default.html">Photo Gallery</a> |
+		<a href="press/default.html">Press</a> | <a href="products/default.html">
+		Products</a> | <a href="promotions/default.html">Promotions</a> |
+		<a href="services/default.html">Services</a> |
+		<a href="site_map/default.html">Site Map</a></p>
+		<p>Copyright &copy; 0000 Company Name. All Rights Reserved.</p>
+	</div>
+	<!-- End Footer --></div>
+<!-- End Container -->
+
+</body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+ body {
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-style: normal;
+	background-color: #2C3E50;
+}
+#container {
+	width: 100%;
+	margin: 0;
+	background-color: #fff;
+	position: relative;
+}
+
+#masthead {
+	
+	width: 100%;
+	background-color: #2C3E50;
+	
+}
+#masthead h3 {
+	float: left;
+	margin: 0;
+	padding: 0;
+	
+}
+#masthead h4 {
+	font-size: small;
+	text-align: right;
+	color: #000;
+	margin: 10px 10px 10px 0;
+	padding: 0;
+}
+
+
+
+
+#navigation {
+	background-color: #ca7;
+	overflow: hidden;
+}
+#page_content {
+	position: absolute;
+	width: 100%;
+	height:100%;
+	background-position:center;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCAA77;
+	border-bottom-width: 900px;
+}
+#column_l {
+	position: relative;
+	/* margin: 0 250px 0 0; */
+	/* padding: 0 2%; */
+	background-color: #fff;
+	float: none;
+}
+#column_r {
+	float: none;
+	width: 330px;
+	margin: 0;
+	padding: 10px;
+	background-color: #FFFFFF;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+#footer {
+	background-color: #dfcfbf;
+	padding-bottom: 50px;
+	
+}
+/* Styles for Masthead */
+#masthead img {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+/* Styles for Navigation */
+#navigation ul {
+	list-style-type: none;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+#navigation li {
+	float: left;
+}
+#navigation a {
+	color: #000;
+	text-decoration: none;
+	display: block;
+	padding: 5px;
+	border: 1px solid #ca7;
+	background-color: #dc8;
+}
+#navigation a:hover {
+	color: #000;
+	text-decoration: none;
+	border: 1px solid #ed9;
+	background-color: #ed9;
+}
+/* Styles for Content */
+h1 {
+	font-size: 2em;
+	color: #393939;
+}
+h2 {
+	font-size: 1.75em;
+	color: #469;
+}
+h3 {
+	font-size: 1.5em;
+	color: #469;
+}
+h4 {
+	font-size: 1.25em;
+	color: #469;
+}
+h5 {
+	font-size: 0.75em;
+	color: #469;
+}
+h6 {
+	font-size: 0.5em;
+	color: #469;
+}
+/* Styles for Footer */
+#footer p {
+	font-size: x-small;
+	text-align: center;
+	color: #393939;
+	margin: 10px;
+	padding: 1px;
+}
+#footer a {
+	color: #393939;
+	text-decoration: underline;
+}
+#footer a:hover {
+	color: #000;
+	text-decoration: none;
+}
+/* Styles for Links */
+a {
+	color: #469;
+	text-decoration: underline;
+}
+a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+.style_bold {
+	font-weight: bold;
+}
+.style_italic {
+	font-style: italic;
+}
+</style>
+</head>
+<body >
+<!-- Begin Container -->
+<div id="container">
+	<!-- Begin Masthead -->
+	<div id="masthead">
+		<h3 style="color: white;">
+MAJUMDAR Corp. <br />
+POS Management Application (GST Compliant)
+</h3><h4 style="color: white;" >
+		office (000) 000-0000<br />
+		fax (000) 000-0000<br />
+		toll-free (000) 000-0000</h4>
+
+	</div>
+	<!-- End Masthead -->
+	<!-- Begin Navigation -->
+	<div id="navigation">
+	
+		<ul>
+			<li><a href="default.html">Home</a></li>
+			<li><a href="about/default.html">About</a></li>
+			<li><a href="news/default.html">News</a></li>
+			<li><a href="calendar/default.html">Calendar</a></li>
+			<li><a href="photo_gallery/default.html">Photo Gallery</a></li>
+			<li><a href="information_links/default.html">Links</a></li>
+			<li><a href="faq/default.html">FAQ</a></li>
+			<li><a href="contact/default.html">Contact</a></li>
+		</ul>
+	</div>
+	<!-- Begin Page Content -->
+	<div id="page_content">
+	<div id="column_l">
+	<form action="homePage.html" name="employeeRegistration" onsubmit="return(validate());">
+	<fieldset name="Group1" style="height:;width:;background-color: ">
+		<legend style="width:; height: 16px;background-color:; "><span class="auto-style7">New 
+		Employee Register</span></legend>
+	
+ 
+<table cellpadding="2" width="50%" bgcolor="" align="center" cellspacing="2">
+ 
+<tr>
+<td colspan=2>
+<center><font size=4 color="#2C3E50"><b>Employee Registration Form</b></font></center>
+</td>
+</tr>
+ <tr>
+<td>Select Role</td>
+<td><select name="Role">
+<option value="-1" selected>select..</option>
+<option value="New Delhi">Manager</option>
+<option value="Mumbai">Employee</option>
+<option value="Goa">Admin</option>
+<option value="Patna">DBA</option>
+</select></td>
+</tr>
+<tr>
+<td>First Name</td>
+<td><input type=text name=textnames id="textname" size="30"></td>
+</tr>
+ 
+<tr>
+<td>Middle Name</td>
+<td><input type=text name=textnames id="textname" size="30"></td>
+</tr>
+ 
+<tr>
+<td>Last Name</td>
+<td><input type=text name=textnames id="textname" size="30"></td>
+</tr>
+ 
+<tr>
+<td>Postal Address</td>
+<td><input type="text" name="paddress" id="paddress" size="30"></td>
+</tr>
+ 
+<tr>
+<td>Personal Address</td>
+<td><input type="text" name="personaladdress"
+id="personaladdress" size="30"></td>
+</tr>
+ 
+<tr>
+<td>Gender</td>
+<td><input type="radio" name="sex" value="male" size="10">Male
+<input type="radio" name="sex" value="Female" size="10">Female</td>
+</tr>
+ 
+<tr>
+<td>City</td>
+<td><select name="City">
+<option value="-1" selected>select..</option>
+<option value="New Delhi">NEW DELHI</option>
+<option value="Mumbai">MUMBAI</option>
+<option value="Goa">GOA</option>
+<option value="Patna">PATNA</option>
+</select></td>
+</tr>
+ 
+
+ 
+<tr>
+<td>District</td>
+<td><select name="District">
+<option value="-1" selected>select..</option>
+<option value="Nalanda">NALANDA</option>
+<option value="UP">UP</option>
+<option value="Goa">GOA</option>
+<option value="Patna">PATNA</option>
+</select></td>
+ 
+</tr>
+ 
+<tr>
+<td>State</td>
+<td><select Name="State">
+<option value="-1" selected>select..</option>
+<option value="New Delhi">NEW DELHI</option>
+<option value="Mumbai">MUMBAI</option>
+<option value="Goa">GOA</option>
+<option value="Bihar">BIHAR</option>
+</select></td>
+</tr>
+<tr>
+<td>PinCode</td>
+<td><input type="text" name="pincode" id="pincode" size="30"></td>
+ 
+</tr>
+<tr>
+<td>EmailId</td>
+<td><input type="text" name="emailid" id="emailid" size="30"></td>
+</tr>
+ 
+<tr>
+<td>DOB</td>
+<td><input type="text" name="dob" id="dob" size="30"></td>
+</tr>
+ 
+<tr>
+<td>MobileNo</td>
+<td><input type="text" name="mobileno" id="mobileno" size="30"></td>
+</tr>
+<tr>
+<td><input type="reset"></td>
+<td colspan="2"><input type="submit" value="Submit Form" /></td>
+<td><center><a href="login.html"><font style="color: navy; "> Login Existing Employee </font></a></center></td>
+</tr>
+</table>
+</fieldset>
+</form>
+	
+</div>
+<div id="column_r">
+			<!-- #BeginEditable "sidebar" -->
+			<img alt="" src="Images/home.jpeg" style="font-size: small; width: 337px; height: 205px"><br>
+			<span class="auto-style2"><strong><span class="auto-style3">&nbsp;</span></strong></span><span class="auto-style3"><!-- #EndEditable --></span><span class="auto-style2"><strong><span class="auto-style3">HOURS 
+			&amp; LOCATION<br></span>
+			
+			<!-- <span class="color_11">500 Terry Francois&nbsp;St.</span><span class="auto-style9">San 
+			Francisco, CA 94158info@mysite.com<br>
+			Tel:&nbsp;123-456-7890Fax:&nbsp;123-456-7890s</span><strong><span class="auto-style3"><br>
+			</span></strong></span> -->
+			
+			<marquee direction="up" width="300px" truespeed="truespeed" onmouseover="stop()" onmouseout="start()" style="color: red;">Last Date of Report Submission is 31/07/2017
+															     After that You'll be charged.
+															     Check for GST Compliant rules and changes. </marquee>
+			
+			</div>
+		<!-- End Right Column -->
+
+	<!-- Begin Footer -->
+	<div id="footer">
+		<p><a href="index.html">Home</a> | <a href="about/default.html">About</a> 
+		| <a href="calendar/default.html">Calendar</a> |
+		<a href="contact/default.html">Contact</a> |
+		<a href="employees/default.html">Employees</a> |
+		<a href="employment/default.html">Employment</a> |
+		<a href="faq/default.html">FAQ</a> |
+		<a href="information_links/default.html">Information Links</a> |
+		<a href="news/default.html">News</a> |
+		<a href="photo_gallery/default.html">Photo Gallery</a> |
+		<a href="press/default.html">Press</a> | <a href="products/default.html">
+		Products</a> | <a href="promotions/default.html">Promotions</a> |
+		<a href="services/default.html">Services</a> |
+		<a href="site_map/default.html">Site Map</a></p>
+		<p>Copyright &copy; 0000 Company Name. All Rights Reserved.</p>
+	</div>
+	<!-- End Footer --></div>
+<!-- End Container -->
+
+</body>
+</html>

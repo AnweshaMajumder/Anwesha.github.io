@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var chf_rss=true;
+	function getPathFromUrl(url){return url.split("?")[0];}
+	var curUrl = window.location.pathname; 
+	var basName = curUrl.replace(/^.*[\/\\]/g, '');
+	var curencyIndx = false;
+</script>
+	<script src="https://www.easycalculation.com/js/jquery.min.js?v0.1"></script>
+<script src='https://www.easycalculation.com/common.js?v4.4'></script>
+<script src='https://www.easycalculation.com/js/jquery.sticky.js'></script>
+<!--script src='//www.easycalculation.com/fact-slider.js'></script-->
+<style type='text/css'>
+.stand { width:20%!important;}
+.stand_num {
+    color: #f27669;
+    font: bold 16px/40px Tahoma;
+}
+
+@media screen and (max-width: 480px) 
+{
+.stand { width:auto !important;max-width:90% !important;}
+.stand_num {   font: bold 12px/30px Tahoma;
+}
+}
+</style>
+<script>
+    var iresult;
+    var gstchk = true;
+    function calculate() {
+        var ahname = easyCommonInputCalculation('a','','Amount');
+        var option=$('#ar').val();
+        if(ahname=='') {
+                alert('Please Enter Valid Amount');
+                $('#resR').hide();
+        }
+        else {
+            $('#resR').show();
+            var ghname = $('#ghname').val();
+            if(ghname == '') {
+                ghname = $('#gst').val();
+            }
+            else {
+                rangecheck();
+            }
+            ghname = parseFloat(ghname);
+            
+            if(option=='a') {
+                taxAmnt = (ahname/100)*ghname;
+                iresult=ahname+parseFloat(taxAmnt);
+            }
+            else {
+                var taxRemv= (100 / (parseFloat(100)+parseFloat(ghname)) );
+                iresult=ahname*taxRemv;
+                taxAmnt = (ahname -iresult);
+            }
+            
+            if(gstchk == true) {
+                var ihname = easyCommonResultCalculation('i','');
+                $('#ihname').html(easyRoundOf(ihname,2)+' &#8377;');
+                $('#thname').html(easyRoundOf(ghname,2));
+                $('#vhname').html(easyRoundOf(taxAmnt,2)+' &#8377;');
+                $('#xhname').html(ahname+' &#8377;');
+            }
+            else {
+                $('#resR').hide();
+            }
+        }
+    }
+    
+    function rangecheck()
+    {
+        var ghname = $('#ghname').val();
+        if((parseFloat(ghname)<5 || parseFloat(ghname)>28) && ghname != '') {
+            alert('Enter Rate of GST between 5 and 28');
+            gstchk = false;
+        }
+        else {
+            gstchk = true;
+        }
+    }
+    
+    function rst()
+    {
+        $('#resR').hide();
+        gstchk = true;
+    }
+    
+    $(document).ready( function() {
+        rst();
+    });
+</script>		<script type="text/javascript">
+		function alert(val)
+		{
+		    $("#dynErrDisp").show();
+		    $("#dynErrDisp").html(val);
+		}
+		$(document).ready(function() {
+			closeModal();
+		});
+		</script>
+
+<script type="text/javascript">
+    var chf_sess = "";
+    var chf_sess_mail = "";
+    var chf_sess_mobile = "";
+</script>
+</head>
+<body bgcolor="#D6EAF8">
+<div class='ec_calculator_gen clearfix' style='margin:0px'>
+<h4>Quick GST Calculator</h4>
+<form>
+    <div class='group clearfix'>
+    <div class='group_con_40 clearfix'>
+        <label>Amount</label>
+        <span class='width_100'><input id=ahname type='text' class='easypositive' >
+        </span> <span class='units' id='aunit'>&#8377;</span>
+    </div>
+    <div class='group_con_40'>
+        <label>Select</label>
+        <span class='width_100'>
+                <select onchange='calculate()' id='ar'>
+                    <option selected value='a'>Add GST</option>
+                    <option value='r'>Remove GST</option>
+                </select>
+         </span>
+    </div>
+</div>
+
+<div class='group clearfix'>
+    <div class='group_con_40'>
+        <label>Select Rate of GST</label>
+        <span class='width_100'>
+                <select onchange='calculate()' id='gst'>
+                    <option selected value='5'>5%</option>
+                    <option value='12'>12%</option>
+                    <option value='18'>18%</option>
+                    <option value='28'>28%</option>
+                </select>
+        </span>
+        <span> (or) </span>
+    </div>
+    <div class='group_con_40'>
+        <label>Rate of GST</label>
+        <span class='width_100'><input id=ghname type='text' class='easypositive' onkeyup='rangecheck()'>
+        </span> <span class='units' id='gunit'>%</span>
+    </div>
+</div>
+
+<input type=button value='Calculate' onclick=calculate()><input type=reset value=Reset onclick=rst()>
+
+<div id='resR' class='margin_both group clearfix'>
+    <div class='stand'>
+        <div class='stand_tit'>Original Cost</div>
+        <div class='stand_num' id='xhname'> </div>
+    </div>
+    <div class='stand'>
+        <div class='stand_tit'>GST %</div>
+        <div class='stand_num' id='thname'> </div>
+    </div>
+    <div class='stand'>
+        <div class='stand_tit'>GST Price</div>
+        <div class='stand_num' id='vhname'> </div>
+    </div>
+    <div class='stand'>
+        <div class='stand_tit'>Net Price</div>
+        <div class='stand_num' id='ihname'> </div>
+    </div>
+</div>
+</form>
+</div></div>
+		<div class="paddingTop"></div>     <!-- ec_calculator ends -->
+     <div class="clear"> </div>
+<script type="text/javascript">
+	var easyinputs = document.getElementsByTagName("INPUT");
+	for (var ies = 0; ies < easyinputs.length; ies++)
+	{
+	    if (easyinputs[ies].type === 'button')
+	    { 
+		easyinputs[ies].style.visibility='hidden';
+		if ((easyinputs[ies].offsetTop-10)<0)
+		{
+			document.getElementById("overlayLoader").style.top = (document.getElementById('dispCalcConts').offsetTop+(document.getElementById('dispCalcConts').offsetHeight/4))+"px";
+		}
+		else
+		{
+			document.getElementById("overlayLoader").style.top = (easyinputs[ies].offsetTop-10)+"px";
+		}
+	    }
+	    else
+	    {
+		document.getElementById("overlayLoader").style.top = (document.getElementById('dispCalcConts').offsetTop+(document.getElementById('dispCalcConts').offsetHeight/4))+"px";
+	    }
+	    if (easyinputs[ies].type === 'reset')
+	    { 
+		easyinputs[ies].style.visibility='hidden';
+	    }
+	}
+</script>
+</body>
+</html>
